@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <body>
+            <div id="container">
+                <h1>Penalty Charge Calculator</h1>
+                <div id="calculator">
+                  <form>
+                    <p>What is the penalty amount? 
+                      <p>
+                        Rs. <input id="penaltyamt" type="text" placeholder="Penalty Amount">
+              
+                        <p>What is your punishment?
+                          <p>
+                            <select id="punishmentType">
+                          <option disabled selected value="0">-- Choose an Option --</option>
+                          <option value="0.25">25&#37; &#45; Kidnapping/Murdering</option>
+                          <option value="0.2" >20&#37; &#45; Bribe</option>
+                          <option value="0.15">15&#37; &#45; Robbery</option>
+                          <option value="0.1" >10&#37; &#45; Throwing garbage in the road</option>
+                          <option value="0.05"> 5&#37; &#45; Vehicle in non-parking zone</option>
+                      </select>
+              
+                  </form>
+                  <p>How many people are involved in the crime?</p>
+                  <input id="peopleamt" type="text" placeholder="Number of People"> people
+                  <button type="button" id="calculate">---Calculate---</button>
+              
+                </div>
+
+                <div id="totalCharge">
+                  <sup>Rs.</sup><span id="charge">0.00 </span><small id="each">each</small> 
+                  
+                </div>
+              
+              </div>
+              
+              <script type="text/javascript" src="calculator.js"></script>
+        </body>
+    </head>
+</html>
